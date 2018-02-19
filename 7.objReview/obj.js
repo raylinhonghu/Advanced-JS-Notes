@@ -3,7 +3,7 @@ var Pizza = {
 	crust:'thin',
   toppings: 3,
   hasBacon: true,
-  hoowmanyToppings: function(){
+  howManyToppings: function(){
   	return this.toppings;
   }
 
