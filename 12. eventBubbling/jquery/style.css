@@ -1,0 +1,15 @@
+#child{
+  border: 1px solid red;
+  width: 80px;
+}
+
+#other{
+  border: 1px solid red;
+  width: 80px;
+}
+
+#main{
+  border: 1px solid red;
+  width: 130px;
+  height: 100px;
+}
