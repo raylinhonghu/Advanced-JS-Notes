@@ -9,11 +9,12 @@ if(position >= 0){
   print("not find");
 }
 
-
-// indexOf()
-// lastIndexOf()
+// index
+.indexOf()
+.lastIndexOf()
 
 
 // change array to string with separate comma
-// .toString()
-// .join()
+.toString()
+.join()
+.join("")
