@@ -1,0 +1,20 @@
+div,span,p {
+  width:140;
+  height: 140;
+  margin: 5px;
+  background: #aaa;
+  border: #000 solid 1px;
+  float:left;
+  font-size:17px;
+  font-family:Verdana;
+}
+
+div.mini{
+  width:55px;
+  height:55px;
+  background-color:#aaa;
+  font-size:12px;
+}
+div.hide{
+  display:none;
+}
