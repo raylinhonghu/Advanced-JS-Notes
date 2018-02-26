@@ -21,9 +21,14 @@ function remove(key){
 }
 
 function showAll(){
+	var sorted = [];
   for (var x in this.dataStore){
-  	/* console.dir(x)  keys*/
-    console.log( x + " ==>  " + this.dataStore[x] );
+   sorted.push(x);
+  }
+  sorted.sort();
+
+  for (var i= 0;i<sorted.length; i++){
+    console.log( sorted[i] + " ==>  " + this.find(sorted[i]) );
   }
 }
 
@@ -42,7 +47,7 @@ function clear(){
 }
 
 
-var pbook = new Dictionary();
+/* var pbook = new Dictionary();
 pbook.add("Raymond","123");
 pbook.add("David", "345");
 pbook.add("Cynthia", "456");
@@ -52,4 +57,14 @@ console.log("David's extension: " + pbook.find("David"));
 pbook.showAll();
 
 pbook.clear();
-console.log("Number of entries: " + pbook.count());
+console.log("Number of entries: " + pbook.count()); */
+
+var pbook = new Dictionary();
+pbook.add("Raymond","123");
+pbook.add("David", "345");
+pbook.add("Cynthia", "456");
+pbook.add("Mike", "723");
+pbook.add("Jennifer", "987");
+pbook.add("Danny", "012");
+pbook.add("Jonathan", "666");
+pbook.showAll();
