@@ -14,6 +14,14 @@ function simpleHash(str){
   return total % this.table.length;
 }
 
+// function BetterHash(str){
+//   var total = 0;
+//   for(var c = 0; c < str.length; c++){
+//     total += str.charCodeAt(c);
+//   }
+//   return total % this.table.length;
+// }
+
 function showDistro(){
   console.log(this.table);
 }
@@ -22,8 +30,8 @@ function put(item){
   this.table[this.simpleHash(item)] = item;
 }
 
-function get(){
-
+function get(item){
+  return this.table[this.simpleHash(item)]
 }
 
 var someNames = ["David", "Jennifer", "Donnie", "Raymond","Cynthia", "Mike", "Clayton", "Danny", "Jonathan"];
