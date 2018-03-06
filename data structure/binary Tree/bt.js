@@ -38,7 +38,7 @@ function insert(val){
           break;
         }
       }else{
-        console.log("inserting existing value");
+        console.log("inserting existing value!");
       }
     }
   }
